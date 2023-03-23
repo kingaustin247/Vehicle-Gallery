@@ -1,0 +1,221 @@
+.nav-bg-color {
+  background-color: #f4f4f4;
+}
+.nav-increase-z-index {
+  z-index: 1100;
+}
+
+.main-nav {
+  background: #212529;
+}
+.main-nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.main-nav .menu a:hover,
+.main-nav .menu a:focus,
+.main-nav .menu a:active {
+  color: #f8f9fa;
+  text-decoration: underline;
+  background: #0057ab;
+}
+
+.main-nav .menu li:has(> img),
+.main-nav .menu li:has(> img),
+.main-nav .menu li:has(> img) {
+  transition: all 0.3s ease-out;
+}
+.main-nav .menu li:has(> img:hover),
+.main-nav .menu li:has(> img:focus),
+.main-nav .menu li:has(> img:active) {
+  background: #0057ab;
+}
+.main-nav .menu img:hover,
+.main-nav .menu img:focus,
+.main-nav .menu img:active {
+  cursor: pointer;
+}
+
+.main-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background: #f4f4f4;
+}
+
+.main-nav .menu > li {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+.nav.menu > li {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.main-nav .menu a {
+  position: relative;
+  display: block;
+  padding: 15px;
+  color: #141b20;
+  outline-width: 0;
+  transition: all 0.3s ease-out;
+}
+.nav > li > a {
+  font-size: 13px;
+  color: #a7b1c2;
+  font-weight: 600;
+  padding: 14px 20px 14px 25px;
+  display: block;
+}
+.nav > li > a i {
+  margin-right: 6px;
+}
+
+#Sub-Menu > li > .dropdown {
+  position: relative;
+  display: block;
+  padding: 15px;
+  color: #141b20;
+  outline-width: 0;
+  text-align: center;
+  transition: all 0.3s ease-out;
+}
+
+#Sub-Menu > li > .dropdown:hover {
+  color: #f8f9fa;
+  text-decoration: underline;
+  background: #004787;
+}
+
+.dropdown > .dropdown-toggle {
+  font-size: 13px;
+  padding: 0;
+  text-align: left;
+  vertical-align: top;
+  font-weight: 600;
+  font-family: revert;
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+.dropdown > .dropdown-toggle:active {
+  pointer-events: none;
+}
+
+.nav.menu .dropdown > .dropdown-menu {
+  border: medium none;
+  border-radius: 3px;
+  box-shadow: 0 0 3px rgba(86, 96, 117, 0.7);
+  /* display: none; */
+  float: left;
+  font-size: 12px;
+  left: 0;
+  list-style: none outside none;
+  padding: 0;
+  position: absolute;
+  text-shadow: none;
+  top: 100%;
+  z-index: 1000;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.nav.menu .dropdown-menu > li > a {
+  padding: 3px 20px;
+  display: block;
+}
+
+.main-nav .menu a {
+  position: relative;
+  display: block;
+  padding: 15px;
+  color: #141b20;
+  outline-width: 0;
+  text-align: center;
+  transition: all 0.3s ease-out;
+}
+.dropdown-menu > li > a {
+  border-radius: 3px;
+  color: inherit;
+  line-height: 25px;
+  margin: 4px;
+  text-align: left;
+  font-weight: normal;
+  display: block;
+  padding: 3px 20px;
+}
+.dropdown-item {
+  width: auto;
+}
+.dropdown-menu > li > a.font-bold {
+  font-weight: 600;
+}
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+  color: #262626;
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+.dropdown-item {
+  width: auto;
+}
+.dropdown-item:active {
+  background-color: inherit;
+  color: inherit;
+}
+
+@media (min-width: 992px) {
+  .main-nav .menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .main-nav .menu > li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 8vw;
+    max-height: calc(6.44vh);
+  }
+  .main-nav .menu > li > ul {
+    position: absolute;
+    top: 100%;
+    min-width: 100%;
+    z-index: 1001;
+  }
+  .main-nav.is-hoverable .menu > li > ul {
+    height: auto !important;
+  }
+  .main-nav.is-hoverable .menu > li:hover > ul {
+    display: block;
+  }
+}

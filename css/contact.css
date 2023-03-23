@@ -1,0 +1,31 @@
+.contact {
+  background: #004787;
+  height: 30px;
+  color: white;
+}
+#contact.container {
+  padding: 5px;
+  min-height: 30px !important;
+}
+.address {
+  padding-right: 8%;
+}
+.contact i {
+  font-size: 1.5em;
+  margin: 0 0.25em 0 0;
+}
+.phone {
+  padding-right: 8%;
+}
+.contact a {
+  color: white;
+}
+.hours {
+  padding-right: 6%;
+}
+
+@media (max-width: 575.98px) {
+  .mobile-hide {
+    display: none !important;
+  }
+}

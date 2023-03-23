@@ -1,0 +1,148 @@
+#vehicle-list .container {
+  min-width: 250px;
+  max-width: 300px;
+}
+#vehicle-list .container img {
+  cursor: pointer;
+}
+
+.ibox {
+    clear: both;
+    margin-bottom: 25px;
+    margin-top: 0;
+    padding: 0;
+  }
+  
+.ibox:after,
+.ibox:before {
+  display: table;
+}
+
+.box {
+  padding: 0;
+  border: 1px solid #e7eaec;
+  min-height: 500px;
+}
+.content {
+  clear: both;
+  background-color: #ffffff;
+  color: inherit;
+  padding: 15px 20px 20px 20px;
+  border-color: #e7eaec;
+  border-image: none;
+  border-style: solid solid none;
+  border-width: 1px 0;
+}
+
+.item {
+  padding: 5px !important;
+  max-height: 165px;
+}
+
+.product {
+  text-align: center;
+  padding: 90px 0;
+  background-color: #f8f8f9;
+  color: #bebec3;
+  font-weight: 600;
+}
+
+.box:hover, .box.active {
+    border: 1px solid transparent;
+    -webkit-box-shadow: 0 3px 7px 0 #a8a8a8;
+    -moz-box-shadow: 0 3px 7px 0 #a8a8a8;
+    box-shadow: 0 3px 7px 0 #a8a8a8;
+}
+
+.discount {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #28a745;
+  padding: 6px 12px;
+  position: relative;
+  top: -27px;
+  right: -30%;
+  z-index: 3;
+}
+
+.description {
+  padding: 20px;
+  position: relative;
+}
+
+.text-muted {
+  color: #888888 !important;
+}
+
+.padded-container-sm {
+    padding: 6px;
+}
+.btn-primary.btn-outline {
+    color: #004787;
+}
+.btn-outline {
+    color: inherit;
+    background-color: transparent;
+    transition: all 0.5s;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #676a6c;
+  display: block;
+  margin: 2px 0 5px 0;
+}
+
+.price {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #004787;
+  padding: 6px 12px;
+  position: relative;
+  top: -27px;
+  right: -30%;
+  z-index: 3;
+}
+
+.special {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #ff2222;
+  padding: 6px 12px;
+  position: relative;
+  top: -27px;
+  right: -30%;
+  z-index: 3;
+}
+
+.btn-xs {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+}
+.product img {
+    width: 100%;
+}
+#vehicle-list .container img {
+    cursor: pointer;
+}
+
+img, .overlay {
+    transition: 0.3s all;
+    border-radius: 3px;
+}
+
+@media (min-width: 768px){
+#VLRow {
+    justify-content: center;
+}
+}
+
+@media (min-width: 992px){
+#vehicle-list {
+    min-height: 725px;
+}
+}

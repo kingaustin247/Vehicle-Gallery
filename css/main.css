@@ -1,0 +1,25 @@
+body {
+  font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: white;
+  font-size: 13px;
+  color: #676a6c;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  height: 100%;
+}
+a {
+  color: #337ab7;
+  cursor: pointer;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+.white-bg {
+  background-color: #ffffff;
+}
