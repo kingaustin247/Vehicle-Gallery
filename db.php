@@ -1,7 +1,7 @@
 <?php
 $servername = 'localhost';
-$dbuser = 'root';
-$dbpass = 'FYb6Zhjc8(g!6[z';
+$dbuser = 'username';
+$dbpass = 'password';
 $dbname = 'VehicleDB';
 try {
     if ($conn = new mysqli($servername, $dbuser, $dbpass, $dbname)) {
